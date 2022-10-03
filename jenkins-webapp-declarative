@@ -14,7 +14,7 @@ tools
    {
        
        steps{
-           git 'https://github.com/mdedika1/maven-web-application'
+           git 'https://github.com/DevCLients/maven-web-application'
        }
 	 }
        
@@ -24,7 +24,7 @@ tools
 	  sh "mvn clean package"
 	 }
    }
-   
+   /*
    stage('3CodeQuality'){
       steps{
         sh "echo 'Perfoming CodeQualityAnalysis' "
@@ -43,6 +43,6 @@ tools
         deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://3.140.216.241:8080/')], contextPath: null, war: 'target/*war'
       }
     }
-    
-}
+    */
+    }
 }
