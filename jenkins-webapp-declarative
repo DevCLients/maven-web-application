@@ -37,13 +37,13 @@ tools
         sh "mvn deploy"
       }
     } 
-   /*
+   
   
    stage('6deploy2prod'){
       steps{
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://3.140.216.241:8080/')], contextPath: null, war: 'target/*war'
+       deploy adapters: [tomcat9(credentialsId: 'TomcatCredentials', path: '', url: 'http://15.223.76.108:8080/')], contextPath: null, war: 'target/*war'
       }
     }
-    */
+    
     }
 }
